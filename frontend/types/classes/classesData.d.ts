@@ -1,11 +1,11 @@
 export type classData ={
-    title: String
-    content: String,
-    video?: String,
+    title: string
+    content?: string,
+    video?: string,
     selected?: boolean
   }
   export type classesData = {
-    name: String,
+    name: string,
     classes: classData[],
     open?: boolean
   }

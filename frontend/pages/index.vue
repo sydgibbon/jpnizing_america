@@ -1,60 +1,63 @@
-<template>
-  <div class="p-6 flex flex-wrap">
-    <div class="w-full md:w-1/3">
-      <Accordion :items="classes" />
-    </div>
-    <div class="w-full md:w-2/3 p-6">
-
-    </div>
-  </div>
-</template>
 
 <script setup lang="ts">
 import type { classesData } from "~/types/classes/classesData";
+import { useClassesStore } from "~/stores/classes"
+const classesStore = useClassesStore()
 
 const classes = [{
-  name: "Section 1",
+  name: "N5",
   classes: [{
-    title: "Question about something 1",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "Hiragana",
+    video: "wDpsF90DoeI",
   },
   {
-    title: "Question about something 2",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "Katakana",
+    video: "gi2AeYO-g8E",
   },
   {
-    title: "Question about something 3",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "Kanji",
+    video: "Y13YOdclzMA",
   },]
 }, {
-  name: "Section 1",
+  name: "N4",
   classes: [{
-    title: "Question about something 1",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "Particles",
+    video: "1hTBL59rack",
   },
   {
-    title: "Question about something 2",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "More Particles",
+    video: "Ly3Tn2MkHIQ",
   },
   {
-    title: "Question about something 3",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "More Kanji",
+    video: "9Ux_O4xq6yk",
   },]
 }, {
-  name: "Section 1",
+  name: "N3",
   classes: [{
-    title: "Question about something 1",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "A ton of Kanji",
+    video: "7Wm8K5KrfXY",
   },
   {
-    title: "Question about something 2",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "A ton of grammar rules",
+    video: "jd1TJALHKqg",
   },
   {
-    title: "Question about something 3",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "Never got this far I dunno",
+    video: "qQORXsSf6SI",
   },]
 }
 
 ] as classesData[];
 </script>
+<template>
+  <div class="p-6 flex flex-wrap">
+    <div class="w-full md:w-1/5 flex-col">
+      <img src="~/assets/img/ura-omote-fortune-gekkan-shojo-nozaki.png" />
+      <Accordion :items="classes" />
+    </div>
+    <div class="w-full md:w-4/5 p-6 px-auto">
+      <youtube :id="classesStore.currentVideo" :key="classesStore.currentVideo"></youtube>
+    </div>
+  </div>
+</template>
