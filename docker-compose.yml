@@ -1,0 +1,32 @@
+services:
+  backend:
+    environment:
+      DATABASE_URL: postgresql://user:password@db/japanizing_america_db
+    build: ./backend
+    ports:
+     - "5000:5000"
+    depends_on:
+     - db
+    restart: 'always'
+    networks:
+      - default
+    
+  frontend:
+    environment:
+      REACT_APP_API_URL: http://localhost:5000
+    restart: 'always'
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - default
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: japanizing_america_db
+    ports:
+      - "5432:5432"
+    restart: 'always'
