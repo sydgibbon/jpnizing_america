@@ -1,10 +1,24 @@
-
 <script setup lang="ts">
 import type { classesData } from "~/types/classes/classesData";
 import { useClassesStore } from "~/stores/classes"
 const classesStore = useClassesStore()
 
-const classes = [{
+const levels = [
+  {
+    label: "N5",
+    slot: "n5",
+  },
+  {
+    label: "N4",
+    slot: "n4",
+  },
+  {
+    label: "N3",
+    slot: "n3",
+  }
+] as any;
+
+const videos = [{
   name: "N5",
   classes: [{
     title: "Hiragana",
@@ -49,12 +63,53 @@ const classes = [{
 }
 
 ] as classesData[];
+
+const setVideo = (videoId: string) => {
+  classesStore.setVideo(videoId); // Método que actualiza el video en el store
+}
 </script>
 <template>
   <div class="p-6 flex flex-wrap">
     <div class="w-full md:w-1/5 flex-col">
       <img src="~/assets/img/ura-omote-fortune-gekkan-shojo-nozaki.png" />
-      <Accordion :items="classes" />
+      <UAccordion :items="levels" variant="solid">
+        <template #n5>
+          <UContainer>
+            <ul>
+              <li v-for="(video, index) in videos[0].classes" :key="video.video">
+                <button @click="setVideo(video.video)">
+                  {{ video.title }}
+                </button>
+                <UDivider v-if="index < videos[2].classes.length - 1" />
+              </li>
+            </ul>
+          </UContainer>
+        </template>
+        <template #n4>
+          <UContainer>
+            <ul>
+              <li v-for="(video, index) in videos[1].classes" :key="video.video">
+                <button @click="setVideo(video.video)">
+                  {{ video.title }}
+                </button>
+                <UDivider v-if="index < videos[2].classes.length - 1" />
+              </li>
+            </ul>
+          </UContainer>
+        </template>
+        <template #n3>
+          <UContainer>
+            <ul>
+              <li v-for="(video, index) in videos[2].classes" :key="video.video">
+                <button @click="setVideo(video.video)">
+                  {{ video.title }}
+                </button>
+                <UDivider v-if="index < videos[2].classes.length - 1" />
+              </li>
+            </ul>
+          </UContainer>
+        </template>
+      </UAccordion>
     </div>
     <div class="w-full md:w-4/5 p-6 px-auto">
       <youtube :id="classesStore.currentVideo" :key="classesStore.currentVideo"></youtube>
