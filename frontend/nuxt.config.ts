@@ -49,7 +49,7 @@ export default defineNuxtConfig({
     layoutTransition: false,
   },
 
-  modules: ["@pinia/nuxt", "@nuxtjs/tailwindcss", "@nuxt/scripts"],
+  modules: ["@pinia/nuxt", "@nuxt/ui"],
 
   imports: {
     dirs: ["types/**"],
@@ -57,5 +57,11 @@ export default defineNuxtConfig({
   plugins: ['@/plugins/youtube.client'],
   css: [
     '@/node_modules/lite-youtube-embed/src/lite-yt-embed.css'
-  ]
+  ],
+  ui: {
+    global: true,
+  },
+  colorMode: {
+    preference: 'light'
+  }
 });
