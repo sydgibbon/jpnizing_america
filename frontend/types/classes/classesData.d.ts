@@ -1,7 +1,7 @@
 export type classData ={
     title: string
     content?: string,
-    video?: string,
+    video: string,
     selected?: boolean
   }
   export type classesData = {
