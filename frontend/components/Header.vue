@@ -1,12 +1,30 @@
+<script setup>
+import { ref } from 'vue'
+import {
+  Dialog,
+} from '@headlessui/vue'
+import {
+  Bars3Icon,
+  XMarkIcon,
+} from '@heroicons/vue/24/outline'
+
+const mobileMenuOpen = ref(false)
+
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+</script>
+
 <template>
-  <header class="bg-red-500">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="/logo.jpg" alt="" />
-        </a>
-      </div>
+  <header class="bg-white shadow-sm flex justify-between">
+    <div class="pl-8 py-2">
+      <a href="/" class="">
+        <span class="sr-only">Japonizando America</span>
+        <img class="h-16 w-auto" src="/img/logo.jpg" alt="" />
+      </a>
+    </div>
+    <nav class="w-2/3 flex max-w-7xl items-center justify-end lg:justify-between p-6 lg:px-8" aria-label="Global">
+
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           @click="mobileMenuOpen = true">
@@ -14,27 +32,33 @@
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
-
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="/login" class="text-sm font-semibold leading-6 text-white">Log in <span
-            aria-hidden="true">&rarr;</span></a>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="/"
+          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/' ? 'text-red-500' : 'text-gray-900']">Inicio</a>
+        <a href="/quienes-somos"
+          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/quienes-somos' ? 'text-red-500' : 'text-gray-900']">Quiénes
+          Somos</a>
+        <a href="/programas"
+          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/programas' ? 'text-red-500' : 'text-gray-900']">Programas</a>
+        <a href="/faq"
+          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/faq' ? 'text-red-500' : 'text-gray-900']">F.A.Q.</a>
+        <a href="/blog"
+          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/blog' ? 'text-red-500' : 'text-gray-900']">Blog</a>
+        <a href="/contacto"
+          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/contacto' ? 'text-red-500' : 'text-gray-900']">Contacto</a>
       </div>
-      <ClientOnly>
-        <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray" variant="ghost"
-          aria-label="Theme" @click="isDark = !isDark" />
-        <template #fallback>
-          <div class="w-8 h-8" />
-        </template>
-      </ClientOnly>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="/login" class="text-sm/6 font-semibold text-gray-900 hover:text-red-500">Log in <span aria-hidden="true">&rarr;</span></a>
+      </div>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-10" />
       <DialogPanel
-        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-red-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+          <a href="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">Japonizando America</span>
+            <img class="h-8 w-auto" src="/img/logo.jpg" alt="" />
           </a>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
@@ -44,29 +68,34 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <Disclosure as="div" class="-mx-3" v-slot="{ open }">
-                <DisclosureButton
-                  class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                  Product
-                  <ChevronDownIcon :class="[open ? 'rotate-180' : '', 'h-5 w-5 flex-none']" aria-hidden="true" />
-                </DisclosureButton>
-                <DisclosurePanel class="mt-2 space-y-2">
-                  <DisclosureButton v-for="item in [...products, ...callsToAction]" :key="item.name" as="a"
-                    :href="item.href"
-                    class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    {{ item.name }}</DisclosureButton>
-                </DisclosurePanel>
-              </Disclosure>
-              <a href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-              <a href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-              <a href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+              <a href="/"
+                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/' ? 'text-red-500' : 'text-gray-900']">
+                Inicio
+              </a>
+              <a href="/quienes-somos"
+                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/quienes-somos' ? 'text-red-500' : 'text-gray-900']">
+                Quiénes Somos
+              </a>
+              <a href="/programas"
+                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/programas' ? 'text-red-500' : 'text-gray-900']">
+                Programas
+              </a>
+              <a href="/faq"
+                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/faq' ? 'text-red-500' : 'text-gray-900']">
+                F.A.Q.
+              </a>
+              <a href="/blog"
+                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/blog' ? 'text-red-500' : 'text-gray-900']">
+                Blog
+              </a>
+              <a href="/contacto"
+                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/contacto' ? 'text-red-500' : 'text-gray-900']">
+                Contacto
+              </a>
             </div>
             <div class="py-6">
               <a href="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
+                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log
                 in</a>
             </div>
           </div>
@@ -75,47 +104,3 @@
     </Dialog>
   </header>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from '@headlessui/vue'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from '@heroicons/vue/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/vue/20/solid'
-const colorMode = useColorMode()
-const isDark = computed({
-  get() {
-    return colorMode.value === 'dark'
-  },
-  set() {
-    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-  }
-})
-
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
-
-const mobileMenuOpen = ref(false)
-</script>

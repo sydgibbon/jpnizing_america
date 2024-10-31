@@ -49,7 +49,7 @@ export default defineNuxtConfig({
     layoutTransition: false,
   },
 
-  modules: ["@pinia/nuxt", "@nuxt/ui"],
+  modules: ["@pinia/nuxt", "@nuxt/ui", "@nuxt/image"],
 
   imports: {
     dirs: ["types/**"],
