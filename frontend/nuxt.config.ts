@@ -22,11 +22,8 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    // The private keys which are only available server-side
-    apiSecret: "123",
-    // Keys within public are also exposed client-side
     public: {
-      apiBase: "/api",
+      MOODLE_URL: process.env.MOODLE_URL || 'http://localhost:80',
     },
   },
 
@@ -63,5 +60,5 @@ export default defineNuxtConfig({
   },
   colorMode: {
     preference: 'light'
-  }
+  },
 });
