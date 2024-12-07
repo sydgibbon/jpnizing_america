@@ -16,29 +16,29 @@
         ¡MIRA NUESTROS ALUMNOS EN ACCIÓN!
       </h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white rounded-lg shadow-md p-4">
-          <div class="aspect-video bg-gray-200 mb-4">
-            <!-- Video placeholder -->
+        <div class="bg-white rounded-lg shadow-md pb-4">
+          <div class="aspect-square overflow-hidden rounded-full mx-4 mt-4 bg-gray-200 mb-4">
+            <img src="~/assets/img/conversation-crop.png"/>
           </div>
-          <h3 class="font-semibold">Taller de Conversación</h3>
+          <h3 class="font-semibold px-4">Taller de Conversación</h3>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-4">
-          <div class="aspect-video bg-gray-200 mb-4">
-            <!-- Kanji images placeholder -->
+        <div class="bg-white rounded-lg shadow-md pb-4">
+          <div class="aspect-square overflow-hidden rounded-full mx-4 mt-4 bg-gray-200 mb-4">
+            <img src="~/assets/img/kanji-crop.jpeg"/>
           </div>
-          <h3 class="font-semibold">Taller de Kanji</h3>
+          <h3 class="font-semibold px-4">Taller de Kanji</h3>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-4">
-          <div class="aspect-video bg-gray-200 mb-4">
-            <!-- Podcast placeholder -->
+        <div class="bg-white rounded-lg shadow-md pb-4">
+          <div class="aspect-square overflow-hidden rounded-full mx-4 mt-4 bg-gray-200 mb-4">
+            <img src="~/assets/img/podcast-crop.jpeg"/>
           </div>
-          <h3 class="font-semibold">Podcast en Japonés</h3>
+          <h3 class="font-semibold px-4">Podcast en Japonés</h3>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-4">
-          <div class="aspect-video bg-gray-200 mb-4">
-            <!-- Testimonials placeholder -->
+        <div class="bg-white rounded-lg shadow-md pb-4">
+          <div class="aspect-square overflow-hidden rounded-full mx-4 mt-4 bg-gray-200 mb-4">
+            <img src="~/assets/img/student_group-crop.png"/>
           </div>
-          <h3 class="font-semibold">¡Ellos nos recomiendan!</h3>
+          <h3 class="font-semibold px-4">¡Ellos nos recomiendan!</h3>
         </div>
       </div>
     </section>
