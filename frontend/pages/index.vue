@@ -61,7 +61,7 @@
             <img class="object-fill rounded-full" src="~/assets/img/FRAN.jpg"/>
           </div>
           <h3 class="font-bold">FRAN</h3>
-          <p class="text-gray-600">N2</p>
+          <p class="text-gray-600">JLPT N3</p>
         </div>
         <div class="text-center">
           <div class="w-48 h-48 bg-gray-200 rounded-full mx-auto mb-4">
@@ -75,7 +75,7 @@
             <img class="object-fill rounded-full" src="~/assets/img/DANI.jpg"/>
           </div>
           <h3 class="font-bold">DANI</h3>
-          <p class="text-gray-600">N2</p>
+          <p class="text-gray-600">JLPT N3</p>
         </div>
       </div>
     </section>
