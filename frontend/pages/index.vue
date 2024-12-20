@@ -58,24 +58,24 @@
       <div class="grid md:grid-cols-3 gap-8">
         <div class="text-center">
           <div class="w-48 h-48 bg-gray-200 rounded-full mx-auto mb-4">
-            <!-- Fran photo placeholder -->
+            <img class="object-fill rounded-full" src="~/assets/img/FRAN.jpg"/>
           </div>
           <h3 class="font-bold">FRAN</h3>
-          <p class="text-gray-600">NOKEN N2</p>
+          <p class="text-gray-600">N2</p>
         </div>
         <div class="text-center">
           <div class="w-48 h-48 bg-gray-200 rounded-full mx-auto mb-4">
-            <!-- Anto photo placeholder -->
+            <img class="object-fill rounded-full" src="~/assets/img/ANTO.jpg"/>
           </div>
           <h3 class="font-bold">ANTO</h3>
-          <p class="text-gray-600">NOKEN N2</p>
+          <p class="text-gray-600">JLPT N2</p>
         </div>
         <div class="text-center">
           <div class="w-48 h-48 bg-gray-200 rounded-full mx-auto mb-4">
-            <!-- Ivan photo placeholder -->
+            <img class="object-fill rounded-full" src="~/assets/img/DANI.jpg"/>
           </div>
-          <h3 class="font-bold">IVAN</h3>
-          <p class="text-gray-600">NOKEN N2</p>
+          <h3 class="font-bold">DANI</h3>
+          <p class="text-gray-600">N2</p>
         </div>
       </div>
     </section>
@@ -85,7 +85,11 @@
       <h2 class="text-3xl font-bold text-red-500 mb-8 text-center">
         ¿QUERÉS APRENDER UN POCO MÁS?
       </h2>
-      <p class="text-center mb-8">¡MIRÁ NUESTROS VIDEOS EN INSTAGRAM!</p>
+      <p class="text-center text-gray-600 mb-8">
+        <a href="https://www.instagram.com/japonizandoamerica/" target="_blank" class="hover:text-red-500 transition">
+          ¡MIRÁ NUESTROS VIDEOS EN INSTAGRAM!
+        </a>
+      </p>
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Instagram reels placeholders -->
         <div class="aspect-square bg-gray-200 rounded-lg"></div>
@@ -99,7 +103,7 @@
       <h2 class="text-2xl font-bold text-red-500 mb-4">
         ¿Qué esperas para comenzar tu viaje con nosotros?
       </h2>
-      <a href="#" class="inline-block bg-red-500 text-white px-8 py-3 rounded-lg hover:bg-red-600 transition">
+      <a href="https://wa.me/+5493513401855" target="_blank" class="inline-block bg-red-500 text-white px-8 py-3 rounded-lg hover:bg-red-600 transition">
         ¡Mandanos MD!
       </a>
     </section>

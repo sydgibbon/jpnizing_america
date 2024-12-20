@@ -18,13 +18,13 @@ const runtimeConfig = useRuntimeConfig()
 
 <template>
   <header class="bg-white shadow-sm flex justify-between">
-    <div class="pl-8 py-2">
+    <div class="px-8 py-2">
       <a href="/" class="">
         <span class="sr-only">Japonizando America</span>
         <img class="h-16 w-auto" src="/img/logo.jpg" alt="" />
       </a>
     </div>
-    <nav class="w-2/3 flex max-w-7xl items-center justify-end lg:justify-between p-6 lg:px-8" aria-label="Global">
+    <nav class="w-full flex items-center justify-end lg:justify-between p-6 lg:px-8" aria-label="Global">
 
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -36,15 +36,8 @@ const runtimeConfig = useRuntimeConfig()
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="/"
           :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/' ? 'text-red-500' : 'text-gray-900']">Inicio</a>
-        <a href="/quienes-somos"
-          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/quienes-somos' ? 'text-red-500' : 'text-gray-900']">Quiénes
-          Somos</a>
         <a href="/programas"
           :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/programas' ? 'text-red-500' : 'text-gray-900']">Programas</a>
-        <a href="/faq"
-          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/faq' ? 'text-red-500' : 'text-gray-900']">F.A.Q.</a>
-        <a href="/blog"
-          :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/blog' ? 'text-red-500' : 'text-gray-900']">Blog</a>
         <a href="/contacto"
           :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/contacto' ? 'text-red-500' : 'text-gray-900']">Contacto</a>
       </div>

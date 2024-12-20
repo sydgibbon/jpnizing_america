@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   typescript: {
     typeCheck: true,
   },
@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 
   $production: {
     routeRules: {
-      "/**": { isr: true },
+      "/**": { swr: true },
     },
   },
 

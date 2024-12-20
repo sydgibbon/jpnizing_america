@@ -7,7 +7,7 @@
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
         <div class="flex items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
-            <!-- Placeholder para ícono/imagen -->
+            <span class="text-2xl">🗣️</span>
           </div>
           <div>
             <h3 class="font-bold text-xl text-red-500 mb-2">TALLER DE CONVERSACIÓN</h3>
@@ -20,7 +20,7 @@
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
         <div class="flex items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
-            <span class="text-2xl">🤓</span>
+            <span class="text-2xl">😎</span>
           </div>
           <div>
             <h3 class="font-bold text-xl text-red-500 mb-2">TALLER DE VER ANIME SIN SUB</h3>
@@ -33,7 +33,7 @@
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
         <div class="flex items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
-            <!-- Placeholder para ícono/imagen -->
+            <span class="text-2xl">🈸</span>
           </div>
           <div>
             <h3 class="font-bold text-xl text-red-500 mb-2">CURSO DE KANJI</h3>
@@ -46,7 +46,7 @@
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
         <div class="flex items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
-            <!-- Placeholder para ícono/imagen -->
+            <span class="text-2xl">📚</span>
           </div>
           <div>
             <h3 class="font-bold text-xl text-red-500 mb-2">CURSOS JLPT</h3>
@@ -63,7 +63,7 @@
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition col-span-2">
         <div class="flex items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
-            <!-- Placeholder para ícono/imagen -->
+            <span class="text-2xl">👨🏻‍🎓</span>
           </div>
           <div>
             <h3 class="font-bold text-xl text-red-500 mb-2">CURSOS PREPARATORIOS JLPT</h3>
