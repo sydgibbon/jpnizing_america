@@ -1,11 +1,8 @@
 <template>
-    <div class="youtube">
-        <lite-youtube
-            :videoid="id"
-            :playlabel="label"
-            class="mx-auto"
-        />
-    </div>
+<iframe id="ytplayer" type="text/html" width="100%" height="400px"
+    src="http://www.youtube.com/embed/WAqsJpqRGkY?autoplay=1&origin=https://japonizandoamerica.com"
+    frameborder="0"/>
+
 </template>
 <script>
     export default {

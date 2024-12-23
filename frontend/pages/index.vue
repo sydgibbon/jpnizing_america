@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import Youtube from '~/components/Youtube.vue';
+</script>
+
 <template>
   <div class="container mx-auto px-4 py-8">
     <!-- Hero Section -->
@@ -48,7 +52,7 @@
       <h2 class="text-2xl font-bold text-red-500 mb-4">¿Aún no te convencemos?</h2>
       <p class="mb-4">¡Te dejamos una clase completa aquí abajo!</p>
       <div class="aspect-video bg-gray-200 max-w-3xl mx-auto">
-        <!-- Class video placeholder -->
+        <Youtube />
       </div>
     </section>
 

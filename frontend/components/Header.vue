@@ -21,7 +21,7 @@ const runtimeConfig = useRuntimeConfig()
     <div class="px-8 py-2">
       <a href="/" class="">
         <span class="sr-only">Japonizando America</span>
-        <img class="h-16 w-auto" src="/img/logo.jpg" alt="" />
+        <img class="h-auto w-20" src="/img/logo.jpg" alt="" />
       </a>
     </div>
     <nav class="w-full flex items-center justify-end lg:justify-between p-6 lg:px-8" aria-label="Global">
@@ -66,21 +66,9 @@ const runtimeConfig = useRuntimeConfig()
                 :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/' ? 'text-red-500' : 'text-gray-900']">
                 Inicio
               </a>
-              <a href="/quienes-somos"
-                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/quienes-somos' ? 'text-red-500' : 'text-gray-900']">
-                Quiénes Somos
-              </a>
               <a href="/programas"
                 :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/programas' ? 'text-red-500' : 'text-gray-900']">
                 Programas
-              </a>
-              <a href="/faq"
-                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/faq' ? 'text-red-500' : 'text-gray-900']">
-                F.A.Q.
-              </a>
-              <a href="/blog"
-                :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/blog' ? 'text-red-500' : 'text-gray-900']">
-                Blog
               </a>
               <a href="/contacto"
                 :class="['-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50', route.path === '/contacto' ? 'text-red-500' : 'text-gray-900']">
