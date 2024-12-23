@@ -85,7 +85,7 @@ import Youtube from '~/components/Youtube.vue';
     </section>
 
     <!-- Instagram Section -->
-    <section class="mb-16">
+    <section class="mb-8">
       <h2 class="text-3xl font-bold text-red-500 mb-8 text-center">
         ¿QUERÉS APRENDER UN POCO MÁS?
       </h2>
@@ -94,16 +94,11 @@ import Youtube from '~/components/Youtube.vue';
           ¡MIRÁ NUESTROS VIDEOS EN INSTAGRAM!
         </a>
       </p>
-      <div class="grid md:grid-cols-3 gap-6">
-        <!-- Instagram reels placeholders -->
-        <div class="aspect-square bg-gray-200 rounded-lg"></div>
-        <div class="aspect-square bg-gray-200 rounded-lg"></div>
-        <div class="aspect-square bg-gray-200 rounded-lg"></div>
-      </div>
+      <Instagram />
     </section>
 
     <!-- CTA Section -->
-    <section class="text-center">
+    <section class="text-center mb-16">
       <h2 class="text-2xl font-bold text-red-500 mb-4">
         ¿Qué esperas para comenzar tu viaje con nosotros?
       </h2>
