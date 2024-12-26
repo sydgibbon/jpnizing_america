@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Youtube from '~/components/Youtube.vue';
 </script>
 
 <template>
@@ -12,6 +11,9 @@ import Youtube from '~/components/Youtube.vue';
       <p class="text-xl text-gray-700 mb-8">
         Japonizando América es el único instituto donde podrás aprender japonés, fácil, rápido, ¡con manga y anime!
       </p>
+      <div class="aspect-video bg-gray-200 max-w-3xl mx-auto">
+        <Youtube video-link="d-7dBycGdjg" autoplay="1"/>
+      </div>
     </section>
 
     <!-- Alumnos en Acción Section -->
@@ -52,7 +54,7 @@ import Youtube from '~/components/Youtube.vue';
       <h2 class="text-2xl font-bold text-red-500 mb-4">¿Aún no te convencemos?</h2>
       <p class="mb-4">¡Te dejamos una clase completa aquí abajo!</p>
       <div class="aspect-video bg-gray-200 max-w-3xl mx-auto">
-        <Youtube />
+        <Youtube video-link="WAqsJpqRGkY" autoplay="0"/>
       </div>
     </section>
 

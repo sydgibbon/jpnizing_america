@@ -1,15 +1,30 @@
 <template>
-<iframe id="ytplayer" type="text/html" width="100%" height="400px"
-    src="https://www.youtube.com/embed/WAqsJpqRGkY?autoplay=1&origin=https://japonizandoamerica.com"
-    frameborder="0"/>
-
+  <iframe
+    id="ytplayer"
+    type="text/html"
+    width="100%"
+    height="400px"
+    :src="`https://www.youtube.com/embed/${videoLink}?autoplay=${autoplay}&origin=https://japonizandoamerica.com`"
+    frameborder="0"
+  />
 </template>
-<script>
-    export default {
-        props: {
-            id: String,
-            label: String,
-        },
-        fetchOnServer: false,
-    }
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  props: {
+    id: String,
+    label: String,
+    autoplay: {
+      type: String,
+      default: "0",
+    },
+    videoLink: {
+      type: String,
+      required: true,
+    },
+  },
+  fetchOnServer: false,
+});
 </script>
