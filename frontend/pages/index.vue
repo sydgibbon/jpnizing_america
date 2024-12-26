@@ -26,25 +26,25 @@
           <div class="aspect-square overflow-hidden rounded-full mx-4 mt-4 bg-gray-200 mb-4">
             <img src="~/assets/img/conversation-crop.png"/>
           </div>
-          <h3 class="font-semibold px-4">Taller de Conversación</h3>
+          <h3 class="font-semibold px-4 text-center">Taller de Conversación</h3>
         </div>
         <div class="bg-white rounded-lg shadow-md pb-4">
           <div class="aspect-square overflow-hidden rounded-full mx-4 mt-4 bg-gray-200 mb-4">
             <img src="~/assets/img/kanji-crop.jpeg"/>
           </div>
-          <h3 class="font-semibold px-4">Taller de Kanji</h3>
+          <h3 class="font-semibold px-4 text-center">Taller de Kanji</h3>
         </div>
         <div class="bg-white rounded-lg shadow-md pb-4">
           <div class="aspect-square overflow-hidden rounded-full mx-4 mt-4 bg-gray-200 mb-4">
             <img src="~/assets/img/podcast-crop.jpeg"/>
           </div>
-          <h3 class="font-semibold px-4">Podcast en Japonés</h3>
+          <h3 class="font-semibold px-4 text-center">Podcast en Japonés</h3>
         </div>
         <div class="bg-white rounded-lg shadow-md pb-4">
           <div class="aspect-square overflow-hidden rounded-full mx-4 mt-4 bg-gray-200 mb-4">
             <img src="~/assets/img/student_group-crop.png"/>
           </div>
-          <h3 class="font-semibold px-4">¡Ellos nos recomiendan!</h3>
+          <h3 class="font-semibold px-4 text-center">¡Ellos nos recomiendan!</h3>
         </div>
       </div>
     </section>
