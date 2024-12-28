@@ -42,7 +42,7 @@ const runtimeConfig = useRuntimeConfig()
           :class="['text-sm/6 font-semibold hover:text-red-500', route.path === '/contacto' ? 'text-red-500' : 'text-gray-900']">Contacto</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a :href="runtimeConfig.public.MOODLE_URL + '/login/index.php'" class="text-sm/6 font-semibold text-gray-900 hover:text-red-500">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="https://cursos.japonizandoamerica.com/login/index.php" class="text-sm/6 font-semibold text-gray-900 hover:text-red-500">Log in <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
