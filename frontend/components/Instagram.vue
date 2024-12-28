@@ -95,7 +95,6 @@
 useHead({
     script: [
         { src: "https://www.instagram.com/embed.js", defer: true },
-        { src: "https://www.embedista.com/j/instagramfeed1707.js", type: "text/javascript" }
     ],
     style: [
         {
