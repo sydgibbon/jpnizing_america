@@ -2,7 +2,7 @@
   <div class="container mx-auto px-4 py-8">
     <h1 class="text-3xl font-bold text-red-500 text-center mb-12">Nuestros Programas</h1>
     
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <!-- Taller de Conversación -->
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
         <div class="flex items-start gap-4">
@@ -60,7 +60,7 @@
       </div>
 
       <!-- Cursos Preparatorios -->
-      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition col-span-2">
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
         <div class="flex items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
             <span class="text-2xl">👨🏻‍🎓</span>
