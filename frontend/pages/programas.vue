@@ -5,20 +5,20 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <!-- Taller de Conversación -->
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
-        <div class="flex flex-wrap items-start gap-4">
+        <div class="flex  items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
             <span class="text-2xl">🗣️</span>
           </div>
           <div class="w-4/5 flex flex-col">
             <h3 class="font-bold text-xl text-red-500 mb-2">TALLER DE CONVERSACIÓN</h3>
-            <p class="text-gray-600 flex flex-wrap">¡Vive la experiencia de hablar en japonés con tus compañeros y habla de lo que te gusta!</p>
+            <p class="text-gray-600 flex ">¡Vive la experiencia de hablar en japonés con tus compañeros y habla de lo que te gusta!</p>
           </div>
         </div>
       </div>
 
       <!-- Taller de Ver Anime -->
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
-        <div class="flex flex-wrap items-start gap-4">
+        <div class="flex  items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
             <span class="text-2xl">😎</span>
           </div>
@@ -31,7 +31,7 @@
 
       <!-- Curso de Kanji -->
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
-        <div class="flex flex-wrap items-start gap-4">
+        <div class="flex  items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
             <span class="text-2xl">🈸</span>
           </div>
@@ -44,7 +44,7 @@
 
       <!-- Cursos JLPT -->
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
-        <div class="flex flex-wrap items-start gap-4">
+        <div class="flex  items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
             <span class="text-2xl">📚</span>
           </div>
@@ -61,7 +61,7 @@
 
       <!-- Cursos Preparatorios -->
       <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
-        <div class="flex flex-wrap items-start gap-4">
+        <div class="flex  items-start gap-4">
           <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
             <span class="text-2xl">👨🏻‍🎓</span>
           </div>
