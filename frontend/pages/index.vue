@@ -1,5 +1,14 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Japonizando América',
+  ogTitle: 'Japonizando América',
+  description: 'Japonizando América es el único instituto donde podrás aprender japonés, fácil, rápido, ¡con manga y anime!',
+  ogDescription: 'Japonizando América es el único instituto donde podrás aprender japonés, fácil, rápido, ¡con manga y anime!',
+  ogImage: 'https://japonizandoamerica.com/img/logo.jpg',
+  twitterCard: 'summary_large_image',
+})
 </script>
+
 
 <template>
   <div class="container mx-auto px-4 py-8">
