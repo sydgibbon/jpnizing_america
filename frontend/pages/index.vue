@@ -100,7 +100,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="text-center mb-16">
+    <section class="text-center mb-16 mt-10 lg:mt-0">
       <h2 class="text-2xl font-bold text-red-500 mb-4">
         ¿Qué esperas para comenzar tu viaje con nosotros?
       </h2>
