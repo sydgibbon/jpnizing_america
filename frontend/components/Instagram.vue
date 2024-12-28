@@ -1,8 +1,8 @@
 <template>
-    <div class="w-full h-[700px] flex justify-center">
-    <blockquote class="instagram-media w-1/2" data-instgrm-permalink="https://www.instagram.com/japonizandoamerica/"
+    <div class="w-full h-[500px] lg:h-[700px] flex justify-center">
+    <blockquote class="instagram-media w-1/2 h-[500px] lg:h-[675px]" data-instgrm-permalink="https://www.instagram.com/japonizandoamerica/"
         data-instgrm-version="12"
-        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:800px; min-width:326px; padding:0; width:99.375%; width:undefinedpx;height:675px;max-height:675px; width:undefinedpx;">
+        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:800px; min-width:326px; padding:0; width:99.375%; max-height:675px;">
         <div style="padding:16px;"> <a id="main_link" href="japonizandoamerica/"
                 style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
                 target="_blank">
